@@ -4,7 +4,7 @@ window.addEventListener("load", () => {
   let closeMenu = document.body.querySelector(".icon-close-menu");
   let title = document.body.querySelector(".main-nav");
   let ubicationMain = window.pageYOffset;
-  let mobileVersion = window.matchMedia("(max-width: 768px)");
+  let mobileVersion = window.matchMedia("(max-width: 992px)");
 
   //Hamburguer Menu
   iconMenu.addEventListener("click", () => {
@@ -29,8 +29,8 @@ window.addEventListener("load", () => {
       title.style.top = "0px";
       mainMenu.style.top = "0px";
     } else {
-      title.style.top = "-10rem";
-      mainMenu.style.top = "-10rem";
+      title.style.top = "-9rem";
+      mainMenu.style.top = "-9rem";
     }
     ubicationMain = ubicationNow;
   });
