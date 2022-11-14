@@ -13,8 +13,8 @@
    });
  }
 
-window.addEventListener("load", () => {
-   let iconMenu = document.body.querySelector(".icon-menu");
+
+  let iconMenu = document.body.querySelector(".icon-menu");
   let mainMenu = document.body.querySelector(".main-menu");
   let closeMenu = document.body.querySelector(".icon-close-menu");
   let title = document.body.querySelector(".main-nav");
@@ -137,6 +137,6 @@ window.addEventListener("load", () => {
   });
 
   //Closing brace window load
-});
+
 
 
