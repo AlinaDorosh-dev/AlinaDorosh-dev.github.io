@@ -1,21 +1,20 @@
-window.addEventListener("load", () => {
-  // JS Alina
-let dots = document.querySelectorAll(".fa-circle");
-let image = document.querySelector(".gallery-image");
-let galleryContainer = document.querySelector(".gallery-container");
-console.log(image);
-for (let i = 0; i < dots.length; i++) {
-  dots[i].addEventListener("click", () => {
-    image.src = "img/slider/" + (i + 1) + ".jpg";
-    let active = document.querySelector(".active");
-    active.classList.remove("active");
-    dots[i].classList.add("active");
-    galleryContainer.classList.toggle("flashit");
-    image.classList.toggle("flashit");
-  });
-}
+ // JS Alina
+ let dots = document.querySelectorAll(".fa-circle");
+ let image = document.querySelector(".gallery-image");
+ let galleryContainer = document.querySelector(".gallery-container");
+ for (let i = 0; i < dots.length; i++) {
+   dots[i].addEventListener("click", () => {
+     image.src = "img/slider/" + (i + 1) + ".jpg";
+     let active = document.querySelector(".active");
+     active.classList.remove("active");
+     dots[i].classList.add("active");
+     galleryContainer.classList.toggle("flashit");
+     image.classList.toggle("flashit");
+   });
+ }
 
-  let iconMenu = document.body.querySelector(".icon-menu");
+window.addEventListener("load", () => {
+   let iconMenu = document.body.querySelector(".icon-menu");
   let mainMenu = document.body.querySelector(".main-menu");
   let closeMenu = document.body.querySelector(".icon-close-menu");
   let title = document.body.querySelector(".main-nav");
