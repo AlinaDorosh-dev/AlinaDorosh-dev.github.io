@@ -1132,6 +1132,7 @@ font-family: 'Titillium Web', sans-serif; */
 #cards-header {
   width: 90%;
   margin-left: 2em;
+  max-width: 1440px;
 }
 
 #h3-title {
@@ -1152,6 +1153,7 @@ font-family: 'Titillium Web', sans-serif; */
   line-height: 1.5em;
   font-size: 14px;
   margin-bottom: 2em;
+  max-width: 1440px;
 }
 
 #cards {
@@ -1256,9 +1258,11 @@ span.fa-text:hover {
     margin: 1% auto;
     color: var(--grey);
     max-width: 1440px;
+    overflow-wrap: break-word;
   }
   #p-title {
     font-size: 14px;
+    max-width: 1440px;
   }
   #cards {
     display: flex;
