@@ -2,7 +2,8 @@
  let dots = document.querySelectorAll(".fa-circle");
  let image = document.querySelector(".gallery-image");
  let galleryContainer = document.querySelector(".gallery-container");
- for (let i = 0; i < dots.length; i++) {
+ let len =dots.length;
+ for (let i = 0; i < len; i++) {
    dots[i].addEventListener("click", () => {
      image.src = "img/slider/" + (i + 1) + ".jpg";
      let active = document.querySelector(".active");
